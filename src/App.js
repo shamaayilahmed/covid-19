@@ -26,8 +26,10 @@ function App() {
   }
 
   if (isLoad) {
-    return <div style={{ margin: '20% 50%' }}>
-      <ReactLoading type='spinningBubbles' color='#23a699' height={70} width={80} />
+    return <div style={{ position: 'relative' }}>
+      <div style={{ position: 'absolute', top: '50%', left: '50%' }}>
+        <ReactLoading type='spinningBubbles' color='#23a699' height={70} width={80} />
+      </div>
     </div>
   }
 
